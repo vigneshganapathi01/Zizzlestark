@@ -115,7 +115,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: #330d40;
 }
 
 #header .logo {
@@ -917,8 +917,8 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #47b2e4;
-  border: 2px solid #47b2e4;
+  background: #e46317;
+  border: 2px solid #e46317;
 }
 
 @media (max-width: 1024px) {
