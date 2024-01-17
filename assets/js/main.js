@@ -158,8 +158,8 @@
   /**
    * Preloader
    */
-  let preloader= select('#preloader');
-  if (preloader) {
+  let loader= select('#loader');
+  if (loader) {
     window.addEventListener('load', () => {
       preloader.remove()
     });

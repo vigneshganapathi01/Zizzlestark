@@ -26,43 +26,63 @@ h6 {
 /*
 
 /*--------------------------------------------------------------
-# Preloader
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-#preloader {
-  position: fixed;
+body {
+  font-family: "Michroma", sans-serif;
+  height: 100vh;
+  background-color: #dcd0e0;
+}
+.loading {
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #330d40;
+  backdrop-filter: blur(3px);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #191654;
+  
 }
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #330d40;
-  border-top-color: #e46317;
-  border-bottom-color: #e46317;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
+@keyframes draw {
+    0% {
+      stroke-dashoffset: 4000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
   }
-
-  100% {
-    transform: rotate(360deg);
+  
+  #svg {
+    height: 110px;
+    width: 110px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 4px;
+    stroke-dasharray: 2500;
+    animation: draw 5s infinite;
+    
   }
-}
-*/
+ .border{
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 25px;
+ } 
+
+ .draw-line {
+    stroke: white;
+    stroke-width: 1;
+    stroke-dasharray: 0;
+    stroke-dashoffset:0;
+  }
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
