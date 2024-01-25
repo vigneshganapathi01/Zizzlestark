@@ -24,10 +24,12 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="preloader.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   
 
 <body>
@@ -599,8 +601,38 @@ End Portfolio Section -->
         </div>
     </div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+   <!--Share-->
+   <div class="menu">
+    <li style="--i:1;--clr:#25d366;">
+    <a href="https://wa.me/9177086 67668"><ion-icon name="logo-whatsapp"></ion-icon></a>
+  </li>
+    <li style="--i:2;--clr:#ea4c89;">
+    <a href="https://www.instagram.com/zizzle_stark?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon name="logo-instagram"></ion-icon></a>
+  </li>
+    <li style="--i:3;--clr:#0b0b0b;">
+    <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+  </li>
+  <div class="toggle">
+      <ion-icon name="share"></ion-icon>
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </div>
    
+  </div>
+  <script>
    
+   let toggle = document.querySelector('.toggle');
+let menu = document.querySelector('.menu');
+
+toggle.onclick = function () {
+  menu.classList.toggle('active');
+};
+
+
+
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
