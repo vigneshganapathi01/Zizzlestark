@@ -88,7 +88,7 @@ body {
 --------------------------------------------------------------*/
 
 .menu{
-  position: relative;
+  position: fixed;
   width: 220px;
   height: 220px;
   display: flex;
@@ -96,7 +96,7 @@ body {
   align-items: center;
   left: 15px;
   bottom: -0.2px;
-  z-index: 996;
+  z-index: 9999;
 }
 .menu .toggle{
   position: relative;
@@ -110,9 +110,9 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background: #e46317;
+  background: #ffff;
   font-size: 2em;
-  color: #ffff;
+  color: #e46317;
   z-index: 10000;
 }
 .menu .toggle ion-icon{
@@ -142,7 +142,7 @@ transform: rotate(360deg);
   list-style-type: none;
   transform-origin: 110px;
   transition: 0.5s;
-  transform: rotate(calc(360deg / 4 * var(--i) ));
+  transform: rotate(calc(360deg / 3 * var(--i) ));
   scale:0;
   z-index: 1;
   overflow: hidden;
@@ -164,10 +164,11 @@ scale: 1;
   font-size: 2.25em;
   color: #ffff;
   border-radius: 50%;
-  transform: rotate(calc(360deg / 4 * var(--i) ));
+  transform: rotate(calc(360deg / 3 * var(--i) ));
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
 
 }
+
 
 /*--------------------------------------------------------------
 # Back to top button

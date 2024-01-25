@@ -94,20 +94,39 @@
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
+  let backToTop = document.querySelector('.back-to-top');
 
-  /**
+if (backToTop) {
+  const toggleBackToTop = () => {
+    if (window.scrollY > 100) {
+      backToTop.classList.add('active');
+    } else {
+      backToTop.classList.remove('active');
+    }
+  };
+
+  window.addEventListener('load', toggleBackToTop);
+  window.addEventListener('scroll', toggleBackToTop);
+}
+
+
+/**
+ * Share
+*/
+  
+    window.onload = function () {
+  let toggle = document.querySelector('.toggle');
+  let menu = document.querySelector('.menu');
+
+  toggle.onclick = function () {
+    menu.classList.toggle('active');
+  };
+
+  window.onscroll = function () {
+    menu.classList.remove('active');
+  };
+};
+/**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
