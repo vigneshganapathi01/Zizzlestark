@@ -114,7 +114,7 @@ if (backToTop) {
  * Share and drag
 */
   
-  window.onload = function () {
+window.onload = function () {
   let toggle = document.querySelector('.toggle');
   let menu = document.querySelector('.menu');
 
@@ -122,8 +122,7 @@ if (backToTop) {
     menu.classList.toggle('active');
   });
 
-  toggle.addEventListener('touchstart', function (e) {
-    e.preventDefault();
+  toggle.addEventListener('touchstart', function () {
     menu.classList.toggle('active');
   });
 
@@ -135,6 +134,8 @@ if (backToTop) {
     menu.classList.remove('active');
   });
 };
+
+
 
 dragElement(document.getElementById("drag"));
 
