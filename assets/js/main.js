@@ -114,29 +114,18 @@ if (backToTop) {
  * Share and drag
 */
   
-window.onload = function () {
+    window.onload = function () {
   let toggle = document.querySelector('.toggle');
   let menu = document.querySelector('.menu');
 
-  toggle.addEventListener('click', toggleMenu);
-  toggle.addEventListener('touchstart', toggleMenu);
-
-  menu.addEventListener('touchstart', toggleMenu); // Add touchstart event listener to the menu
-
-  function toggleMenu(e) {
-    e.preventDefault();
+  toggle.onclick = function () {
     menu.classList.toggle('active');
-  }
+  };
 
   window.onscroll = function () {
     menu.classList.remove('active');
   };
-
-  window.addEventListener('touchmove', function () {
-    menu.classList.remove('active');
-  });
 };
-
 dragElement(document.getElementById("drag"));
 
 function dragElement(elmnt) {
