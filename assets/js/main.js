@@ -114,18 +114,28 @@ if (backToTop) {
  * Share and drag
 */
   
-    window.onload = function () {
+  window.onload = function () {
   let toggle = document.querySelector('.toggle');
   let menu = document.querySelector('.menu');
 
-  toggle.onclick = function () {
+  toggle.addEventListener('click', function () {
     menu.classList.toggle('active');
-  };
+  });
+
+  toggle.addEventListener('touchstart', function (e) {
+    e.preventDefault();
+    menu.classList.toggle('active');
+  });
 
   window.onscroll = function () {
     menu.classList.remove('active');
   };
+
+  window.addEventListener('touchmove', function () {
+    menu.classList.remove('active');
+  });
 };
+
 dragElement(document.getElementById("drag"));
 
 function dragElement(elmnt) {
