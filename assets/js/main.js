@@ -118,14 +118,13 @@ window.onload = function () {
   let toggle = document.querySelector('.toggle');
   let menu = document.querySelector('.menu');
 
-  toggle.addEventListener('click', function () {
-    menu.classList.toggle('active');
-  });
+  toggle.addEventListener('click', toggleMenu);
+  toggle.addEventListener('touchstart', toggleMenu);
 
-  toggle.addEventListener('touchstart', function (e) {
+  function toggleMenu(e) {
     e.preventDefault();
     menu.classList.toggle('active');
-  });
+  }
 
   window.onscroll = function () {
     menu.classList.remove('active');
