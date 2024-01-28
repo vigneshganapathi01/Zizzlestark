@@ -121,6 +121,8 @@ window.onload = function () {
   toggle.addEventListener('click', toggleMenu);
   toggle.addEventListener('touchstart', toggleMenu);
 
+  menu.addEventListener('touchstart', toggleMenu); // Add touchstart event listener to the menu
+
   function toggleMenu(e) {
     e.preventDefault();
     menu.classList.toggle('active');
