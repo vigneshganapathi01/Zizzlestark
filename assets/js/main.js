@@ -113,16 +113,17 @@ if (backToTop) {
 /**
  * Share and drag
 */
-  
 window.onload = function () {
   let toggle = document.querySelector('.toggle');
   let menu = document.querySelector('.menu');
 
-  toggle.addEventListener('click', function () {
+  toggle.addEventListener('click', function (event) {
+    event.preventDefault();
     menu.classList.toggle('active');
   });
 
-  toggle.addEventListener('touchstart', function () {
+  toggle.addEventListener('touchstart', function (event) {
+    event.preventDefault();
     menu.classList.toggle('active');
   });
 
