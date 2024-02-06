@@ -348,4 +348,22 @@ function dragElement(elmnt) {
     });
   });
 
+  const insta=document.getElementById("insta")
+ insta.addEventListener("touchend",(e)=>{
+  console.log("click");
+  window.location.href="https://www.instagram.com/zizzle_stark?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+ })
+
+ const wh=document.getElementById("wh")
+ wh.addEventListener("touchend",(e)=>{
+  console.log("click");
+  window.location.href="https://wa.me/917708667668"
+ })
+
+ 
+ const linkdn=document.getElementById("linkedin")
+ linkdn.addEventListener("touchend",(e)=>{
+  console.log("click");
+  window.location.href="https://www.linkedin.com/company/zizzlestark/"
+ })
 })()
