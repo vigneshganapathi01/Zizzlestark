@@ -1,10 +1,4 @@
-/**
-* Template Name: Arsha
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -349,22 +343,4 @@ function dragElement(elmnt) {
   });
 
 })()
-const insta=document.getElementById("insta")
-insta.addEventListener("touchend",(e)=>{
-console.log("click");
-window.location.href="https://www.instagram.com/zizzle_stark?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-})
 
-const wh=document.getElementById("wh")
-wh.addEventListener("touchend",(e)=>{
-console.log("click");
-window.location.href="https://wa.me/917708667668"
-})
-
-
-const linkdn=document.getElementById("linkedin")
-linkdn.addEventListener("touchend",(e)=>{
-console.log("click");
-window.location.href="https://www.linkedin.com/company/zizzlestark/"
-})
-})() 
