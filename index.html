@@ -30,7 +30,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="preloader.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"rel="stylesheet"/>
 
 <body>
 
@@ -595,20 +595,18 @@ End Portfolio Section -->
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
    <!--Share-->
    <div class="menu" id ="drag">
-    <li style="--i:3;--clr:#25d366;" id="wh">
-    <a href="https://wa.me/917708667668"><ion-icon name="logo-whatsapp"></ion-icon></a>
-  </li>
-    <li style="--i:1;--clr:#ea4c89;" id="insta">
-    <a href="https://www.instagram.com/zizzle_stark?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon name="logo-instagram"></ion-icon></a>
-  </li>
-    <li style="--i:2;--clr: #0077b5;" id="linkedin">
-    <a href="https://www.linkedin.com/company/zizzlestark/"><ion-icon name="logo-linkedin"></ion-icon></a>
-  </li>
-  <div class="toggle">
-    <ion-icon name="logo-ionitron"></ion-icon>
-      <ion-icon name="close-circle-outline"></ion-icon>
-    </div>
-   
+    <div id = "page" class="site">
+      <div class="share">
+          <input type="checkbox" id="sharebutton">
+          <label for="sharebutton"><ion-icon name="arrow-redo"></ion-icon></label>
+          <ul>
+              <li class="close"><a href="#"><i class="ri-close-line"></i></a></li>
+              <li class="whatsapp"><a href="https://wa.me/917708667668"><ion-icon name="logo-whatsapp"></ion-icon></a>
+              <li class="instagram"><a href="https://www.instagram.com/zizzle_stark?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon name="logo-instagram"></ion-icon></a>
+              <li class="linkedin"><a href="https://www.linkedin.com/company/zizzlestark/"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </ul>
+      </div>
+  </div>
   </div>
       
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
