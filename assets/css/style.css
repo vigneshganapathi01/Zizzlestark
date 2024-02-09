@@ -101,23 +101,27 @@ ul{
 a.label{
   -webkit-tap-highlight-color: transparent;
 }
-
+.site{
+  display: flex;
+  align-items: center;
+  height: 45px;
+ 
+}
 .share input{
   display: none;
 
 }
 .share{
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   right: 45px;
-  z-index: 996;
 }
 .share label{
   position: absolute;
   font-size: 1.5em;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,7 +130,7 @@ a.label{
   color: #fff;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 996;
+  z-index: 10;
   top:13px;
   left: 60px;
   margin-left: -10px;
@@ -167,7 +171,6 @@ a.label{
   border-radius: 50%;
   color: #fff;
   transition: transform .3s;
-  
 }
 .share ul li:where(:nth-child(1), :nth-child(2)){
   transform: translateX(80px);
@@ -182,16 +185,16 @@ a.label{
   transform: translateX(0);
 }
 .share ul li.whatsapp a{
-  background-color: #25d366;
-  box-shadow: #25d366 0 15px 18px -8px;
+ background-color: #25d366;
+ box-shadow: #25d366 0 15px 18px -8px;
 }
 .share ul li.instagram a{
-  background-color: #ea4c89;
-  box-shadow: #ea4c89 0 15px 18px -8px;
+ background-color: #ea4c89;
+ box-shadow: #ea4c89 0 15px 18px -8px;
 }
 .share ul li.linkedin a{
-  background-color: #0077b5;
-  box-shadow: #0077b5 0 15px 18px -8px;
+ background-color: #0077b5;
+ box-shadow: #0077b5 0 15px 18px -8px;
 }
 .share ul li.close a{
   background-color: #000;
@@ -207,8 +210,6 @@ transform: translateY(-10px);
 .share ul li a:hover i{
   transform: rotate(360deg);
 }
-
-
 
 
 
