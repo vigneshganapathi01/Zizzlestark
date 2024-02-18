@@ -116,6 +116,7 @@ a.label{
   width: 45px;
   height: 45px;
   right: 45px;
+  z-index: 1000;
 }
 .share label{
   position: absolute;
