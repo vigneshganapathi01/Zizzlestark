@@ -14,7 +14,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to left, #330d40, #e46317);
+  background: linear-gradient(135deg, #927331, #946429, #f7eeb3);
   height: 100%;
   width: 100%;
   display: flex;
@@ -22,7 +22,7 @@ body {
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
-  color: #191654;
+  color: #927331;
 }
 
 #svg {
@@ -71,7 +71,7 @@ body {
   font-size: 36px; /* Adjust size as needed */
   text-align: center;
   line-height: 50px; /* Adjust size as needed */
-  background-color: #330d40; /* Adjust background color as needed */
+  background-color: linear-gradient(135deg, #927331, #946429, #f7eeb3);
   border: 1px solid #cccccc; /* Adjust border as needed */
   border-radius: 50%; /* Makes the label circular */
   cursor: pointer;
