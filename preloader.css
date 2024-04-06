@@ -93,3 +93,11 @@ body {
   width: 50px; /* Adjust size as needed */
   height: auto;
 }
+.ciic_img {
+  width: 89px;
+  height: 110px;
+  position: absolute;
+  left: 485px;
+  top: 242px;
+  /* Adjust this value if needed */
+}

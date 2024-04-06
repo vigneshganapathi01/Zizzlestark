@@ -126,8 +126,8 @@ a.label{
   display: flex;
   align-items: center;
   justify-content: center;
-  background:#e46317;
-  box-shadow:#ff512f 0 15px 18px -8px;
+  background:#e7d97d;
+  box-shadow:#946429 0 15px 18px -8px;
   color: #fff;
   border-radius: 50%;
   cursor: pointer;
@@ -279,6 +279,7 @@ transform: translateY(-10px);
 #header .logo img {
   max-height: 40px;
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
