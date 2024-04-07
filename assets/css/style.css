@@ -266,9 +266,9 @@ transform: translateY(-10px);
   font-size: 30px;
   margin: 0;
   padding: 0;
-  line-height: 1;
+  line-height: 01;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -278,6 +278,14 @@ transform: translateY(-10px);
 
 #header .logo img {
   max-height: 40px;
+}
+.power {
+  color: white;
+  text-align: left;
+  line-height: 1;
+  font-weight: 200;
+  padding-right: 150px; 
+  padding-top: 30px;
 }
 
 
@@ -314,6 +322,7 @@ transform: translateY(-10px);
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
+  
 }
 
 .navbar a i,
@@ -1040,7 +1049,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(39, 45, 54, 0.9), rgba(71, 78, 94, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(227, 177, 106, 0.9), rgba(118, 76, 4, 0.9)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -1353,7 +1362,7 @@ section {
 
 .pricing .box {
   padding: 60px 40px;
-  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+  box-shadow: 0 3px 20px -2px rgba(227, 150, 33, 0.1);
   background: #fff;
   height: 100%;
   border-top: 4px solid #fff;
